@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji Karyawan</title>
+</head>
+<body>
+    <h1>Gaji Karyawan</h1>
+
+    <form method="post" action="hitung.php">
+        Nama Pegawai : <input type="text" name="nama">
+        Jabatan : <select name="jabatan">
+            <option>Pilih Jabatan</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+            <option value="chief">Chief Technology Officer</option>
+            <option value="manager">Manager</option>
+        </select>
+        Kinerja : <input type="text" name="kinerja" min="0" max="100">
+
+        <input type="submit" name="submit" value="Hitung Gaji">
+    </form>
+</body>
+</html>
